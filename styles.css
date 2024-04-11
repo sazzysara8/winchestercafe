@@ -1,6 +1,57 @@
-body {
-  margin: 0;
-  background: #D6C4B0;
-  text-align: center;
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+    background-color: #bea67c;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    background-color: #d3b897;
+    color: #333;
+    text-align: center;
+    padding: 5em 1em;
+    height: calc(100% - 60px); /* Adjust the height to fit the screen minus the header */
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+.banner h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.cta a {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #8c6b4d;
+    color: white;
+    text-decoration: none;
+}
+
+.cta a:hover {
+    background-color: #735c3f;
+}
