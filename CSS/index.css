@@ -62,13 +62,16 @@ header {
 }
 
 .cta-buttons {
+    font-family: 'Abhaya Libre', sans-serif;
+    font-size: 18px;
     text-align: center;
-    color: #a87b5f;
 }
 
 .cta {
-    font-family: 'Abhaya Libre', sans-serif;
-    font-size: 18px;
+    color: #5a4634; /* Regular link color */
+    text-decoration: none; /* Removes underline from links */
+    margin: 0 10px; /* Adjust spacing around links */
+    font-weight: normal; /* Adjust as needed */
     cursor: pointer;
 }
 
