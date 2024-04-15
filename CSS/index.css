@@ -69,9 +69,10 @@ header {
 .cta {
     font-family: 'Abhaya Libre', sans-serif;
     font-size: 18px;
+    color: #a87b5f;
     cursor: pointer;
 }
 
 .cta:hover {
-    background-color: #a87b5f;
+    background-color: white;
 }
