@@ -9,7 +9,7 @@ body, html {
 .container {
     width: 100%;
     height: 100%;
-    background-image: URL('../images/backgroundimg.png') no-repeat center center;
+    background-image: "../images/backgroundimg.png" no-repeat center center;
     background-size: cover;
 }
 
