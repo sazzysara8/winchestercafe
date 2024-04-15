@@ -80,6 +80,67 @@ header {
     cursor: pointer;
 }
 
+/* Existing CSS */
+
+/* ... */
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 48px; /* Smaller font size for tablet */
+  }
+
+  .hero h2 {
+    font-size: 60px; /* Smaller font size for tablet */
+  }
+
+  .cta-buttons {
+    font-size: 18px; /* Smaller font size for tablet */
+  }
+  
+  .main-nav li {
+    margin: 0 5px; /* Less space between nav items on tablets */
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  .main-nav ul {
+    display: block;
+    text-align: center;
+  }
+  
+  .main-nav li {
+    display: block; /* Stack the nav items */
+    margin: 10px 0; /* More vertical space between nav items */
+  }
+
+  .hero {
+    left: 50%;
+    top: 30%; /* Adjusted for mobile view */
+    transform: translate(-50%, -30%);
+    padding: 0 20px; /* Add padding on smaller screens */
+  }
+
+  .hero h1 {
+    font-size: 36px; /* Smaller font size for mobile */
+  }
+
+  .hero h2 {
+    font-size: 48px; /* Smaller font size for mobile */
+  }
+
+  .cta-buttons {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+  
+  .cta {
+    display: block; /* Stack the CTA buttons */
+    margin: 10px 0; /* More vertical space between CTAs */
+  }
+}
+
+
 .cta:hover {
     color: #a87b5f;
 }
