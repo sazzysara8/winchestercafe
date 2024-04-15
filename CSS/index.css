@@ -50,7 +50,6 @@ header {
 }
 
 .hero h1 {
-    @import url('https://fonts.cdnfonts.com/css/abhaya-libre-2');
     font-family: 'Abhaya Libre', sans-serif;
     font-size: 60px;
     margin: 0;
