@@ -13,9 +13,6 @@ body, html {
     background-image: url("/images/backgroundimg.PNG");
     background-size: cover;
 }
-.container:hover {
-    color: #a87b5f;
-}
 
 header {
     width: 100%;
@@ -42,6 +39,9 @@ header {
     color: #5a4634;
     font-weight: bold;
     font-size: 16px;
+}
+.main-nav a:hover {
+    color: #a87b5f;
 }
 
 .hero {
