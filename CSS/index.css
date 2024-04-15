@@ -63,16 +63,15 @@ header {
 
 .cta-buttons {
     text-align: center;
-    color: #5a4634;
+    color: #a87b5f;
 }
 
 .cta {
     font-family: 'Abhaya Libre', sans-serif;
     font-size: 18px;
-    color: #a87b5f;
     cursor: pointer;
 }
 
 .cta:hover {
-    background-color: white;
+    color: #a87b5f;
 }
