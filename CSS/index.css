@@ -66,14 +66,12 @@ header {
 }
 
 .cta {
-    display: inline-block;
+    font-family: 'Abhaya Libre', sans-serif;
     margin: 10px;
     padding: 10px 20px;
-    background-color: #a87b5f;
-    color: white;
+    color: #a87b5f;
     text-decoration: none;
     font-size: 18px;
-    border: none;
     cursor: pointer;
 }
 
