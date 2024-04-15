@@ -57,13 +57,13 @@ header {
 .hero h1 {
     font-family: 'Abhaya Libre', sans-serif;
     font-size: 60px;
-    text-align: left;
+    margin: 0;
 }
 
 .hero h2 {
     font-family: 'Anton';
     font-size: 80px;
-    text-align: left;
+    margin: 20px 0;
 }
 
 .cta-buttons {
