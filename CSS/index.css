@@ -63,7 +63,7 @@ header {
 
 .cta-buttons {
     text-align: center;
-    color: #a87b5f;
+    color: #5a4634;
 }
 
 .cta {
@@ -73,5 +73,5 @@ header {
 }
 
 .cta:hover {
-    background-color: #5a4634;
+    background-color: #a87b5f;
 }
