@@ -34,5 +34,16 @@
             </div>
         </main>
     </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('mobile-menu');
+    var menuList = document.getElementById('menu-list');
+    
+    menuToggle.onclick = function() {
+      menuList.classList.toggle('active');
+    };
+  });
+</script>
 </body>
 </html>
