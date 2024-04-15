@@ -39,6 +39,7 @@ header {
     color: #5a4634;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
 }
 .main-nav a:hover {
     color: #a87b5f;
