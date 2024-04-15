@@ -30,7 +30,7 @@ header {
 
 .main-nav li {
     display: inline;
-    #margin-right: 20px;
+    text-align: left;
     margin: 0 10px;
 }
 
@@ -46,7 +46,7 @@ header {
 }
 
 .hero {
-    #text-align: center;
+    text-align: left;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,13 +57,13 @@ header {
 .hero h1 {
     font-family: 'Abhaya Libre', sans-serif;
     font-size: 60px;
-    margin: 0;
+    text-align: left;
 }
 
 .hero h2 {
     font-family: 'Anton';
     font-size: 80px;
-    margin: 20px 0;
+    text-align: left;
 }
 
 .cta-buttons {
