@@ -2,69 +2,68 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.cdnfonts.com/css/abhaya-libre-2" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
 <style>
   body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
+    font-family: 'Abhaya Libre', sans-serif;
+    background: url('backgroundimg.PNG') no-repeat center center fixed;
+    background-size: cover;
+    color: #5a4634;
   }
   
-  /* Navigation styles */
   .navbar {
-    overflow: hidden;
-    background-color: #333;
+    background-color: #fff; /* Change as needed */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Gives a slight shadow for depth */
   }
 
   .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: 17px;
-  }
-
-  /* Responsive navigation menu (for screens less than 600px wide) */
-  @media screen and (max-width: 600px) {
-    .navbar a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .navbar a.toggle {
-      display: none;
-    }
+    color: inherit;
+    display: inline-block;
   }
   
-  /* The toggle menu button */
-  .toggle {
-    float: right;
+  .navbar a:not(:last-child) {
+    border-right: 1px solid #5a4634; /* Vertical divider between menu items */
+  }
+
+  .navbar-toggle {
     display: none;
-  }
-
-  /* Show the toggle button on small screens */
-  @media screen and (max-width: 600px) {
-    .toggle {
-      display: block;
-    }
-  }
-
-  /* The cafe content */
-  .content {
-    padding: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
   }
   
-  /* Styling for the cafe title and reservation link */
-  .cafe-header {
+  /* Title styles */
+  .title {
+    font-family: 'Anton', sans-serif;
+    font-size: 48px;
     text-align: center;
     margin: 20px 0;
   }
   
-  .cafe-reservation {
-    text-align: center;
-    margin-bottom: 20px;
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .navbar a {
+      display: none; /* Hide all links */
+    }
+    
+    .navbar a.icon {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .navbar-toggle {
+      display: block;
+    }
   }
 </style>
 </head>
@@ -76,22 +75,16 @@
   <a href="#nightcafe">Night Cafe</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
-  <a href="javascript:void(0);" class="toggle" onclick="toggleMenu()">
-    &#9776;
-  </a>
+  <span class="navbar-toggle" onclick="toggleNavbar()">&#9776;</span>
 </div>
 
-<div class="content">
-  <div class="cafe-header">
-    <h1>Antique Cafe Winchester</h1>
-    <p>Afternoon Tea | Reservation here</p>
-  </div>
-  <!-- Add your cafe content here -->
-</div>
+<div class="title">WINCHESTER</div>
+
+<!-- Add the rest of your page content here -->
 
 <script>
-function toggleMenu() {
-  var x = document.getElementsByClassName("navbar")[0];
+function toggleNavbar() {
+  var x = document.querySelector(".navbar");
   if (x.className === "navbar") {
     x.className += " responsive";
   } else {
