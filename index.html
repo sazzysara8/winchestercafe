@@ -2,38 +2,96 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.cdnfonts.com/css/abhaya-libre-2" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
-
 <style>
   body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Abhaya Libre', sans-serif;
     background-image: url("/images/backgroundimg.PNG");
-    background-size: cover;
-    color: #5a4634;
   }
   
+  /* Navigation styles */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Responsive navigation menu (for screens less than 600px wide) */
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar a.toggle {
+      display: none;
+    }
+  }
+  
+  /* The toggle menu button */
+  .toggle {
+    float: right;
+    display: none;
+  }
+
+  /* Show the toggle button on small screens */
+  @media screen and (max-width: 600px) {
+    .toggle {
+      display: block;
+    }
+  }
+
+  /* The cafe content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* Styling for the cafe title and reservation link */
+  .cafe-header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .cafe-reservation {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 </style>
 </head>
 <body>
+
 <div class="navbar">
   <a href="#home">Home</a>
   <a href="#menu">Menu</a>
   <a href="#nightcafe">Night Cafe</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
-  <span class="navbar-toggle" onclick="toggleNavbar()">&#9776;</span>
+  <a href="javascript:void(0);" class="toggle" onclick="toggleMenu()">
+    &#9776;
+  </a>
 </div>
 
-<div class="title">WINCHESTER</div>
-
-<!-- Add the rest of your page content here -->
+<div class="content">
+  <div class="cafe-header">
+    <h1>Antique Cafe Winchester</h1>
+    <p>Afternoon Tea | Reservation here</p>
+  </div>
+  <!-- Add your cafe content here -->
+</div>
 
 <script>
-function toggleNavbar() {
-  var x = document.querySelector(".navbar");
+function toggleMenu() {
+  var x = document.getElementsByClassName("navbar")[0];
   if (x.className === "navbar") {
     x.className += " responsive";
   } else {
