@@ -1,6 +1,5 @@
 
   .navbar {
-    background-color: #fff; /* Change as needed */
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Gives a slight shadow for depth */
@@ -9,7 +8,6 @@
   .navbar a {
     padding: 10px 15px;
     text-decoration: none;
-    color: inherit;
     display: inline-block;
   }
   
