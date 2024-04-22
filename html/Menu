@@ -2,7 +2,45 @@
 <html lang="ja">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<a href="/html/menu.html"></a>
+<link href="https://fonts.cdnfonts.com/css/abhaya-libre-2" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <title>Menu Page</title>
+    <link rel="stylesheet" href="menu.css">
 </head>
+<body>
+<div class="menu-page">
+    <div class="menu-title">
+        <h1>Afternoon Tea Menu</h1>
+        <p class="price">¥9,680</p>
+    </div>
+    
+    <div class="menu-category">
+        <h2>SWEETS</h2>
+        <ul>
+            <li>Strawberry Shortcake</li>
+            <li>Macarons</li>
+            <!-- Add more sweets items here -->
+        </ul>
+    </div>
+    
+    <div class="menu-category">
+        <h2>SAVORY</h2>
+        <ul>
+            <li>Salmon Sandwich</li>
+            <li>Quiche</li>
+            <!-- Add more savory items here -->
+        </ul>
+    </div>
+    
+    <!-- Add more categories as needed -->
+
+    <div class="menu-images">
+        <img src="path/to/image1.jpg" alt="Menu Item 1">
+        <img src="path/to/image2.jpg" alt="Menu Item 2">
+        <!-- Add more images as needed -->
+    </div>
+    
+    <!-- Add footer or additional content as needed -->
+</div>
 </body>
 </html>
