@@ -1,0 +1,235 @@
+/* winchester.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.winchester-serif{font-family:serif}.winchester-sans-serif{font-family:sans-serif}.winchester-cursive{font-family:cursive}.winchester-monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.winchester-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.winchester-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.winchester-table,.winchester-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.winchester-table-all{border:1px solid #ccc}
+.winchester-bordered tr,.winchester-table-all tr{border-bottom:1px solid #ddd}.winchester-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.winchester-table-all tr:nth-child(odd){background-color:#fff}.winchester-table-all tr:nth-child(even){background-color:#f1f1f1}
+.winchester-hoverable tbody tr:hover,.winchester-ul.winchester-hoverable li:hover{background-color:#ccc}.winchester-centered tr th,.winchester-centered tr td{text-align:center}
+.winchester-table td,.winchester-table th,.winchester-table-all td,.winchester-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.winchester-table th:first-child,.winchester-table td:first-child,.winchester-table-all th:first-child,.winchester-table-all td:first-child{padding-left:16px}
+.winchester-btn,.winchester-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.winchester-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.winchester-btn,.winchester-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.winchester-disabled,.winchester-btn:disabled,.winchester-button:disabled{cursor:not-allowed;opacity:0.3}.winchester-disabled *,:disabled *{pointer-events:none}
+.winchester-btn.winchester-disabled:hover,.winchester-btn:disabled:hover{box-shadow:none}
+.winchester-badge,.winchester-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.winchester-badge{border-radius:50%}
+.winchester-ul{list-style-type:none;padding:0;margin:0}.winchester-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.winchester-ul li:last-child{border-bottom:none}
+.winchester-tooltip,.winchester-display-container{position:relative}.winchester-tooltip .winchester-text{display:none}.winchester-tooltip:hover .winchester-text{display:inline-block}
+.winchester-ripple:active{opacity:0.5}.winchester-ripple{transition:opacity 0s}
+.winchester-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.winchester-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.winchester-dropdown-click,.winchester-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.winchester-dropdown-hover:hover .winchester-dropdown-content{display:block}
+.winchester-dropdown-hover:first-child,.winchester-dropdown-click:hover{background-color:#ccc;color:#000}
+.winchester-dropdown-hover:hover > .winchester-button:first-child,.winchester-dropdown-click:hover > .winchester-button:first-child{background-color:#ccc;color:#000}
+.winchester-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.winchester-check,.winchester-radio{width:24px;height:24px;position:relative;top:6px}
+.winchester-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.winchester-bar-block .winchester-dropdown-hover,.winchester-bar-block .winchester-dropdown-click{width:100%}
+.winchester-bar-block .winchester-dropdown-hover .winchester-dropdown-content,.winchester-bar-block .winchester-dropdown-click .winchester-dropdown-content{min-width:100%}
+.winchester-bar-block .winchester-dropdown-hover .winchester-button,.winchester-bar-block .winchester-dropdown-click .winchester-button{width:100%;text-align:left;padding:8px 16px}
+.winchester-main,#main{transition:margin-left .4s}
+.winchester-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.winchester-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.winchester-bar{width:100%;overflow:hidden}.winchester-center .winchester-bar{display:inline-block;width:auto}
+.winchester-bar .winchester-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.winchester-bar .winchester-dropdown-hover,.winchester-bar .winchester-dropdown-click{position:static;float:left}
+.winchester-bar .winchester-button{white-space:normal}
+.winchester-bar-block .winchester-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.winchester-bar-block.winchester-center .winchester-bar-item{text-align:center}.winchester-block{display:block;width:100%}
+.winchester-responsive{display:block;overflow-x:auto}
+.winchester-container:after,.winchester-container:before,.winchester-panel:after,.winchester-panel:before,.winchester-row:after,.winchester-row:before,.winchester-row-padding:after,.winchester-row-padding:before,
+.winchester-cell-row:before,.winchester-cell-row:after,.winchester-clear:after,.winchester-clear:before,.winchester-bar:before,.winchester-bar:after{content:"";display:table;clear:both}
+.winchester-col,.winchester-half,.winchester-third,.winchester-twothird,.winchester-threequarter,.winchester-quarter{float:left;width:100%}
+.winchester-col.s1{width:8.33333%}.winchester-col.s2{width:16.66666%}.winchester-col.s3{width:24.99999%}.winchester-col.s4{width:33.33333%}
+.winchester-col.s5{width:41.66666%}.winchester-col.s6{width:49.99999%}.winchester-col.s7{width:58.33333%}.winchester-col.s8{width:66.66666%}
+.winchester-col.s9{width:74.99999%}.winchester-col.s10{width:83.33333%}.winchester-col.s11{width:91.66666%}.winchester-col.s12{width:99.99999%}
+@media (min-width:601px){.winchester-col.m1{width:8.33333%}.winchester-col.m2{width:16.66666%}.winchester-col.m3,.winchester-quarter{width:24.99999%}.winchester-col.m4,.winchester-third{width:33.33333%}
+.winchester-col.m5{width:41.66666%}.winchester-col.m6,.winchester-half{width:49.99999%}.winchester-col.m7{width:58.33333%}.winchester-col.m8,.winchester-twothird{width:66.66666%}
+.winchester-col.m9,.winchester-threequarter{width:74.99999%}.winchester-col.m10{width:83.33333%}.winchester-col.m11{width:91.66666%}.winchester-col.m12{width:99.99999%}}
+@media (min-width:993px){.winchester-col.l1{width:8.33333%}.winchester-col.l2{width:16.66666%}.winchester-col.l3{width:24.99999%}.winchester-col.l4{width:33.33333%}
+.winchester-col.l5{width:41.66666%}.winchester-col.l6{width:49.99999%}.winchester-col.l7{width:58.33333%}.winchester-col.l8{width:66.66666%}
+.winchester-col.l9{width:74.99999%}.winchester-col.l10{width:83.33333%}.winchester-col.l11{width:91.66666%}.winchester-col.l12{width:99.99999%}}
+.winchester-rest{overflow:hidden}.winchester-stretch{margin-left:-16px;margin-right:-16px}
+.winchester-content,.winchester-auto{margin-left:auto;margin-right:auto}.winchester-content{max-width:980px}.winchester-auto{max-width:1140px}
+.winchester-cell-row{display:table;width:100%}.winchester-cell{display:table-cell}
+.winchester-cell-top{vertical-align:top}.winchester-cell-middle{vertical-align:middle}.winchester-cell-bottom{vertical-align:bottom}
+.winchester-hide{display:none!important}.winchester-show-block,.winchester-show{display:block!important}.winchester-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.winchester-auto{max-width:95%}}
+@media (max-width:600px){.winchester-modal-content{margin:0 10px;width:auto!important}.winchester-modal{padding-top:30px}
+.winchester-dropdown-hover.winchester-mobile .winchester-dropdown-content,.winchester-dropdown-click.winchester-mobile .winchester-dropdown-content{position:relative}	
+.winchester-hide-small{display:none!important}.winchester-mobile{display:block;width:100%!important}.winchester-bar-item.winchester-mobile,.winchester-dropdown-hover.winchester-mobile,.winchester-dropdown-click.winchester-mobile{text-align:center}
+.winchester-dropdown-hover.winchester-mobile,.winchester-dropdown-hover.winchester-mobile .winchester-btn,.winchester-dropdown-hover.winchester-mobile .winchester-button,.winchester-dropdown-click.winchester-mobile,.winchester-dropdown-click.winchester-mobile .winchester-btn,.winchester-dropdown-click.winchester-mobile .winchester-button{width:100%}}
+@media (max-width:768px){.winchester-modal-content{width:500px}.winchester-modal{padding-top:50px}}
+@media (min-width:993px){.winchester-modal-content{width:900px}.winchester-hide-large{display:none!important}.winchester-sidebar.winchester-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.winchester-hide-medium{display:none!important}}
+@media (max-width:992px){.winchester-sidebar.winchester-collapse{display:none}.winchester-main{margin-left:0!important;margin-right:0!important}.winchester-auto{max-width:100%}}
+.winchester-top,.winchester-bottom{position:fixed;width:100%;z-index:1}.winchester-top{top:0}.winchester-bottom{bottom:0}
+.winchester-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.winchester-display-topleft{position:absolute;left:0;top:0}.winchester-display-topright{position:absolute;right:0;top:0}
+.winchester-display-bottomleft{position:absolute;left:0;bottom:0}.winchester-display-bottomright{position:absolute;right:0;bottom:0}
+.winchester-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.winchester-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.winchester-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.winchester-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.winchester-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.winchester-display-container:hover .winchester-display-hover{display:block}.winchester-display-container:hover span.winchester-display-hover{display:inline-block}.winchester-display-hover{display:none}
+.winchester-display-position{position:absolute}
+.winchester-circle{border-radius:50%}
+.winchester-round-small{border-radius:2px}.winchester-round,.winchester-round-medium{border-radius:4px}.winchester-round-large{border-radius:8px}.winchester-round-xlarge{border-radius:16px}.winchester-round-xxlarge{border-radius:32px}
+.winchester-row-padding,.winchester-row-padding>.winchester-half,.winchester-row-padding>.winchester-third,.winchester-row-padding>.winchester-twothird,.winchester-row-padding>.winchester-threequarter,.winchester-row-padding>.winchester-quarter,.winchester-row-padding>.winchester-col{padding:0 8px}
+.winchester-container,.winchester-panel{padding:0.01em 16px}.winchester-panel{margin-top:16px;margin-bottom:16px}
+.winchester-code,.winchester-codespan{font-family:Consolas,"courier new";font-size:16px}
+.winchester-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.winchester-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.winchester-card,.winchester-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.winchester-card-4,.winchester-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.winchester-spin{animation:winchester-spin 2s infinite linear}@keyframes winchester-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.winchester-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.winchester-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.winchester-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.winchester-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.winchester-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.winchester-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.winchester-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.winchester-animate-input{transition:width 0.4s ease-in-out}.winchester-animate-input:focus{width:100%!important}
+.winchester-opacity,.winchester-hover-opacity:hover{opacity:0.60}.winchester-opacity-off,.winchester-hover-opacity-off:hover{opacity:1}
+.winchester-opacity-max{opacity:0.25}.winchester-opacity-min{opacity:0.75}
+.winchester-greyscale-max,.winchester-grayscale-max,.winchester-hover-greyscale:hover,.winchester-hover-grayscale:hover{filter:grayscale(100%)}
+.winchester-greyscale,.winchester-grayscale{filter:grayscale(75%)}.winchester-greyscale-min,.winchester-grayscale-min{filter:grayscale(50%)}
+.winchester-sepia{filter:sepia(75%)}.winchester-sepia-max,.winchester-hover-sepia:hover{filter:sepia(100%)}.winchester-sepia-min{filter:sepia(50%)}
+.winchester-tiny{font-size:10px!important}.winchester-small{font-size:12px!important}.winchester-medium{font-size:15px!important}.winchester-large{font-size:18px!important}
+.winchester-xlarge{font-size:24px!important}.winchester-xxlarge{font-size:36px!important}.winchester-xxxlarge{font-size:48px!important}.winchester-jumbo{font-size:64px!important}
+.winchester-left-align{text-align:left!important}.winchester-right-align{text-align:right!important}.winchester-justify{text-align:justify!important}.winchester-center{text-align:center!important}
+.winchester-border-0{border:0!important}.winchester-border{border:1px solid #ccc!important}
+.winchester-border-top{border-top:1px solid #ccc!important}.winchester-border-bottom{border-bottom:1px solid #ccc!important}
+.winchester-border-left{border-left:1px solid #ccc!important}.winchester-border-right{border-right:1px solid #ccc!important}
+.winchester-topbar{border-top:6px solid #ccc!important}.winchester-bottombar{border-bottom:6px solid #ccc!important}
+.winchester-leftbar{border-left:6px solid #ccc!important}.winchester-rightbar{border-right:6px solid #ccc!important}
+.winchester-section,.winchester-code{margin-top:16px!important;margin-bottom:16px!important}
+.winchester-margin{margin:16px!important}.winchester-margin-top{margin-top:16px!important}.winchester-margin-bottom{margin-bottom:16px!important}
+.winchester-margin-left{margin-left:16px!important}.winchester-margin-right{margin-right:16px!important}
+.winchester-padding-small{padding:4px 8px!important}.winchester-padding{padding:8px 16px!important}.winchester-padding-large{padding:12px 24px!important}
+.winchester-padding-16{padding-top:16px!important;padding-bottom:16px!important}.winchester-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.winchester-padding-32{padding-top:32px!important;padding-bottom:32px!important}.winchester-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.winchester-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.winchester-padding-top-64{padding-top:64px!important}.winchester-padding-top-48{padding-top:48px!important}
+.winchester-padding-top-32{padding-top:32px!important}.winchester-padding-top-24{padding-top:24px!important}
+.winchester-left{float:left!important}.winchester-right{float:right!important}
+.winchester-button:hover{color:#000!important;background-color:#ccc!important}
+.winchester-transparent,.winchester-hover-none:hover{background-color:transparent!important}
+.winchester-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.winchester-amber,.winchester-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.winchester-aqua,.winchester-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.winchester-blue,.winchester-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.winchester-light-blue,.winchester-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.winchester-brown,.winchester-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.winchester-cyan,.winchester-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.winchester-blue-grey,.winchester-hover-blue-grey:hover,.winchester-blue-gray,.winchester-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.winchester-green,.winchester-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.winchester-light-green,.winchester-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.winchester-indigo,.winchester-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.winchester-khaki,.winchester-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.winchester-lime,.winchester-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.winchester-orange,.winchester-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.winchester-deep-orange,.winchester-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.winchester-pink,.winchester-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.winchester-purple,.winchester-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.winchester-deep-purple,.winchester-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.winchester-red,.winchester-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.winchester-sand,.winchester-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.winchester-teal,.winchester-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.winchester-yellow,.winchester-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.winchester-white,.winchester-hover-white:hover{color:#000!important;background-color:#fff!important}
+.winchester-black,.winchester-hover-black:hover{color:#fff!important;background-color:#000!important}
+.winchester-grey,.winchester-hover-grey:hover,.winchester-gray,.winchester-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.winchester-light-grey,.winchester-hover-light-grey:hover,.winchester-light-gray,.winchester-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.winchester-dark-grey,.winchester-hover-dark-grey:hover,.winchester-dark-gray,.winchester-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.winchester-pale-red,.winchester-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.winchester-pale-green,.winchester-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.winchester-pale-yellow,.winchester-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.winchester-pale-blue,.winchester-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.winchester-text-amber,.winchester-hover-text-amber:hover{color:#ffc107!important}
+.winchester-text-aqua,.winchester-hover-text-aqua:hover{color:#00ffff!important}
+.winchester-text-blue,.winchester-hover-text-blue:hover{color:#2196F3!important}
+.winchester-text-light-blue,.winchester-hover-text-light-blue:hover{color:#87CEEB!important}
+.winchester-text-brown,.winchester-hover-text-brown:hover{color:#795548!important}
+.winchester-text-cyan,.winchester-hover-text-cyan:hover{color:#00bcd4!important}
+.winchester-text-blue-grey,.winchester-hover-text-blue-grey:hover,.winchester-text-blue-gray,.winchester-hover-text-blue-gray:hover{color:#607d8b!important}
+.winchester-text-green,.winchester-hover-text-green:hover{color:#4CAF50!important}
+.winchester-text-light-green,.winchester-hover-text-light-green:hover{color:#8bc34a!important}
+.winchester-text-indigo,.winchester-hover-text-indigo:hover{color:#3f51b5!important}
+.winchester-text-khaki,.winchester-hover-text-khaki:hover{color:#b4aa50!important}
+.winchester-text-lime,.winchester-hover-text-lime:hover{color:#cddc39!important}
+.winchester-text-orange,.winchester-hover-text-orange:hover{color:#ff9800!important}
+.winchester-text-deep-orange,.winchester-hover-text-deep-orange:hover{color:#ff5722!important}
+.winchester-text-pink,.winchester-hover-text-pink:hover{color:#e91e63!important}
+.winchester-text-purple,.winchester-hover-text-purple:hover{color:#9c27b0!important}
+.winchester-text-deep-purple,.winchester-hover-text-deep-purple:hover{color:#673ab7!important}
+.winchester-text-red,.winchester-hover-text-red:hover{color:#f44336!important}
+.winchester-text-sand,.winchester-hover-text-sand:hover{color:#fdf5e6!important}
+.winchester-text-teal,.winchester-hover-text-teal:hover{color:#009688!important}
+.winchester-text-yellow,.winchester-hover-text-yellow:hover{color:#d2be0e!important}
+.winchester-text-white,.winchester-hover-text-white:hover{color:#fff!important}
+.winchester-text-black,.winchester-hover-text-black:hover{color:#000!important}
+.winchester-text-grey,.winchester-hover-text-grey:hover,.winchester-text-gray,.winchester-hover-text-gray:hover{color:#757575!important}
+.winchester-text-light-grey,.winchester-hover-text-light-grey:hover,.winchester-text-light-gray,.winchester-hover-text-light-gray:hover{color:#f1f1f1!important}
+.winchester-text-dark-grey,.winchester-hover-text-dark-grey:hover,.winchester-text-dark-gray,.winchester-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.winchester-border-amber,.winchester-hover-border-amber:hover{border-color:#ffc107!important}
+.winchester-border-aqua,.winchester-hover-border-aqua:hover{border-color:#00ffff!important}
+.winchester-border-blue,.winchester-hover-border-blue:hover{border-color:#2196F3!important}
+.winchester-border-light-blue,.winchester-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.winchester-border-brown,.winchester-hover-border-brown:hover{border-color:#795548!important}
+.winchester-border-cyan,.winchester-hover-border-cyan:hover{border-color:#00bcd4!important}
+.winchester-border-blue-grey,.winchester-hover-border-blue-grey:hover,.winchester-border-blue-gray,.winchester-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.winchester-border-green,.winchester-hover-border-green:hover{border-color:#4CAF50!important}
+.winchester-border-light-green,.winchester-hover-border-light-green:hover{border-color:#8bc34a!important}
+.winchester-border-indigo,.winchester-hover-border-indigo:hover{border-color:#3f51b5!important}
+.winchester-border-khaki,.winchester-hover-border-khaki:hover{border-color:#f0e68c!important}
+.winchester-border-lime,.winchester-hover-border-lime:hover{border-color:#cddc39!important}
+.winchester-border-orange,.winchester-hover-border-orange:hover{border-color:#ff9800!important}
+.winchester-border-deep-orange,.winchester-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.winchester-border-pink,.winchester-hover-border-pink:hover{border-color:#e91e63!important}
+.winchester-border-purple,.winchester-hover-border-purple:hover{border-color:#9c27b0!important}
+.winchester-border-deep-purple,.winchester-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.winchester-border-red,.winchester-hover-border-red:hover{border-color:#f44336!important}
+.winchester-border-sand,.winchester-hover-border-sand:hover{border-color:#fdf5e6!important}
+.winchester-border-teal,.winchester-hover-border-teal:hover{border-color:#009688!important}
+.winchester-border-yellow,.winchester-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.winchester-border-white,.winchester-hover-border-white:hover{border-color:#fff!important}
+.winchester-border-black,.winchester-hover-border-black:hover{border-color:#000!important}
+.winchester-border-grey,.winchester-hover-border-grey:hover,.winchester-border-gray,.winchester-hover-border-gray:hover{border-color:#9e9e9e!important}
+.winchester-border-light-grey,.winchester-hover-border-light-grey:hover,.winchester-border-light-gray,.winchester-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.winchester-border-dark-grey,.winchester-hover-border-dark-grey:hover,.winchester-border-dark-gray,.winchester-hover-border-dark-gray:hover{border-color:#616161!important}
+.winchester-border-pale-red,.winchester-hover-border-pale-red:hover{border-color:#ffe7e7!important}.winchester-border-pale-green,.winchester-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.winchester-border-pale-yellow,.winchester-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.winchester-border-pale-blue,.winchester-hover-border-pale-blue:hover{border-color:#e7ffff!important}
