@@ -61,67 +61,55 @@ h1, h2, h3, h4, h5, h6 {
 </div>
 
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-white" style="margin-left:260px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:80px"></div>
-
-  <!-- Slideshow Header -->
+  <!-- Slideshow -->
   <div class="w3-container">
     <div class="w3-display-container mySlides">
-    <img src="/images/afternoontea.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container ">
-        <p>Afternoon Tea</p>
+      <img src="/images/coffee.jpg" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Coffee</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
-    <img src="/images/afternoontea2.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Afternoon Tea</p>
+      <img src="/images/main.jpg" style="width:100%">
+      <div class="w3-display-middle w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Winchester</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
-    <img src="/images/coffee.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Siphon Coffee</p>
+      <img src="/images/afternoontea.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Afternoon Tea</span>
       </div>
     </div>
-    <div class="w3-display-container mySlides">
-    <img src="/images/focaccia.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Focaccia</p>
+   <div class="w3-display-container mySlides">
+      <img src="/images/afternoontea2.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Afternoon Tea</span>
       </div>
     </div>
-    <div class="w3-display-container mySlides">
-    <img src="/images/main.jpg" style="width:100%;margin-bottom:-6px">
-      <div class="w3-display-bottomleft w3-container w3-black">
-        <p>Focaccia</p>
+   <div class="w3-display-container mySlides">
+      <img src="/images/focaccia.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Focaccia</span>
+      </div>
+    </div>
+	  
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+	<span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+
       </div>
     </div>
   </div>
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="/images/afternoontea.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="afternoontea">
-    </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="/images/afternoontea2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="afternoontea">
-    </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="/images/coffee.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="coffee">
-    </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="/images/focaccia.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="focaccia">
-    </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="/images/main.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="main">
-    </div>
-  </div>
-
-
+  
 
 	
 
@@ -180,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	
 <script>
-<!-- Slideshow  Images -->
+// Slideshow
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -195,17 +183,17 @@ function currentDiv(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+    dots[i].className = dots[i].className.replace(" w3-white", "");
   }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
 }
 </script>
 	
