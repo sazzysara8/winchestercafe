@@ -47,6 +47,51 @@ h1, h2, h3, h4, h5, h6 {
 .winchester-left, .winchester-right, .winchester-badge {cursor:pointer}
 .winchester-badge {height:13px;width:13px;padding:0}
 
+
+<!-- Navbar mobile (style) -->
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+	
+	
 </style>
 </head>
 <body>
@@ -65,6 +110,26 @@ h1, h2, h3, h4, h5, h6 {
   </div>
 </div>
 
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="/about" class="active">About</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="/menu">MENU</a>
+    <a href="/bar">Night Cafe</a>
+    <a href="/contact">Reservation</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+	
   <!-- Slideshow -->
 <div class="winchester-content winchester-display-container" style="max-width:800px">
   <img class="mySlides" src="/images/coffee.jpg" style="width:100%">
@@ -170,6 +235,15 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}	
 </script>
 
 	
