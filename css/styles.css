@@ -1,34 +1,13 @@
-    @media screen and (max-width: 600px) {
-      .nav .winchester-right {
-        display: none;
+@media screen and (max-width: 600px) {
+      .nav .winchester-bar-item .winchester-button {
+          display: none;
       }
-      .nav .icon {
-        display: block;
+
+@media screen and (min-width: 600px) {
+      .nav .winchester-bar-item .winchester-button {
+          text-align: center;
       }
-      .nav.responsive {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .nav.responsive .winchester-right {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
-      .nav.responsive a {
-        text-align: left;
-        padding: 10px;
-        width: 100%;
-      }
-    }
-    .column {
-      width: 100%;
-      text-align: center;
-    }
-    @media screen and (min-width: 600px) {
-      .column {
-        width: 50%;
-      }
-    }
+
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
