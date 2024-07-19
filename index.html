@@ -49,27 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* RESPONSIVE NAVBAR */
-.nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.nav a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    display: block;
-}
-.nav .icon {
-    display: none;
-}
-.nav .winchester-right {
-    display: flex;
-}
 @media screen and (max-width: 786px) {
-    .nav .winchester-right {
+    .nav .winchester-right .winchester-hide-small {
 	display: none;
     }
     .nav .icon {
@@ -80,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 	flex-direction: column;
 	align-items: flex-start;
     }
-    .nav.responsive .winchester-right {
+    .nav.responsive .winchester-right .winchester-hide-small  {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
