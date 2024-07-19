@@ -1,12 +1,4 @@
-@media screen and (max-width: 600px) {
-      .nav .winchester-bar-item .winchester-button {
-          display: none;
-      }
 
-@media screen and (min-width: 600px) {
-      .nav .winchester-bar-item .winchester-button {
-          text-align: center;
-      }
 
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
