@@ -34,57 +34,6 @@ body {
 
 
 
-
-/* Default margin for larger screens */
-body {
-    margin: 20px;
-    padding-top: 60px; /* Adjust this value to match the height of your fixed navbar */
-}
-
-
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 576px) {
-    body {
-        margin: 5px;
-    }
-}
-
-/* Fixed Navbar */
-.winchester-fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-/* Adjustments for the rest of the page to avoid content being hidden behind the navbar */
-body {
-    padding-top: 60px; /* Adjust this value to match the height of your navbar */
-}
-
-.winchester-hide-small {
-    display: block !important;
-    font-size: 0.8em; /* Adjust this value as needed to shrink the navbar text */
-    padding: 5px; /* Adjust padding as needed to fit the design */
-}
-
-/* Ensure the mobile version remains displayed with 100% width */
-.winchester-mobile {
-    display: block;
-    width: 100% !important;
-}
-
-/* Center text alignment for mobile items */
-.winchester-bar-item.winchester-mobile,
-.winchester-dropdown-hover.winchester-mobile,
-.winchester-dropdown-click.winchester-mobile {
-    text-align: center;
-}
-
-
-
-
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
