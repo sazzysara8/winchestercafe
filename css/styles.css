@@ -89,7 +89,25 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media (max-width:1205px){.winchester-auto{max-width:95%}}
 @media (max-width:600px){.winchester-modal-content{margin:0 10px;width:auto!important}.winchester-modal{padding-top:30px}
 .winchester-dropdown-hover.winchester-mobile .winchester-dropdown-content,.winchester-dropdown-click.winchester-mobile .winchester-dropdown-content{position:relative}	
-.winchester-hide-small{display:none!important}.winchester-mobile{display:block;width:100%!important}.winchester-bar-item.winchester-mobile,.winchester-dropdown-hover.winchester-mobile,.winchester-dropdown-click.winchester-mobile{text-align:center}
+
+.winchester-hide-small {
+    display: block !important;
+    font-size: 0.8em; /* Adjust this value as needed to shrink the navbar text */
+    padding: 5px; /* Adjust padding as needed to fit the design */
+}
+
+/* Ensure the mobile version remains displayed with 100% width */
+.winchester-mobile {
+    display: block;
+    width: 100% !important;
+}
+
+/* Center text alignment for mobile items */
+.winchester-bar-item.winchester-mobile,
+.winchester-dropdown-hover.winchester-mobile,
+.winchester-dropdown-click.winchester-mobile {
+    text-align: center;
+}
 .winchester-dropdown-hover.winchester-mobile,.winchester-dropdown-hover.winchester-mobile .winchester-btn,.winchester-dropdown-hover.winchester-mobile .winchester-button,.winchester-dropdown-click.winchester-mobile,.winchester-dropdown-click.winchester-mobile .winchester-btn,.winchester-dropdown-click.winchester-mobile .winchester-button{width:100%}}
 @media (max-width:768px){.winchester-modal-content{width:500px}.winchester-modal{padding-top:50px}}
 @media (min-width:993px){.winchester-modal-content{width:900px}.winchester-hide-large{display:none!important}.winchester-sidebar.winchester-collapse{display:block!important}}
