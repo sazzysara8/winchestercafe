@@ -41,19 +41,7 @@ body {
     padding-top: 60px; /* Adjust this value to match the height of your fixed navbar */
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 1024px) {
-    body {
-        margin: 15px;
-    }
-}
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 768px) {
-    body {
-        margin: 10px;
-    }
-}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
@@ -182,15 +170,42 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .winchester-cell-row{display:table;width:100%}.winchester-cell{display:table-cell}
 .winchester-cell-top{vertical-align:top}.winchester-cell-middle{vertical-align:middle}.winchester-cell-bottom{vertical-align:bottom}
 .winchester-hide{display:none!important}.winchester-show-block,.winchester-show{display:block!important}.winchester-show-inline-block{display:inline-block!important}
-@media (max-width:1205px){.winchester-auto{max-width:95%}}
-@media (max-width:600px){.winchester-modal-content{margin:0 10px;width:auto!important}.winchester-modal{padding-top:30px}
+@media (max-width:1205px){
+    body{
+        margin: 5px;
+    }
+    .winchester-auto{
+        max-width:95%
+    }
+}
+
+@media (max-width:600px){
+    body{
+        margin: 5px;
+    } 
+    .winchester-modal-content{
+        margin:0 10px;width:auto!important
+    }
+    .winchester-modal{
+        padding-top:30px
+    }
+}
+
 .winchester-dropdown-hover.winchester-mobile .winchester-dropdown-content,.winchester-dropdown-click.winchester-mobile .winchester-dropdown-content{position:relative}	
 
 
-
-
 .winchester-dropdown-hover.winchester-mobile,.winchester-dropdown-hover.winchester-mobile .winchester-btn,.winchester-dropdown-hover.winchester-mobile .winchester-button,.winchester-dropdown-click.winchester-mobile,.winchester-dropdown-click.winchester-mobile .winchester-btn,.winchester-dropdown-click.winchester-mobile .winchester-button{width:100%}}
-@media (max-width:768px){.winchester-modal-content{width:500px}.winchester-modal{padding-top:50px}}
+@media (max-width:768px){
+    body{
+        margin: 5px;
+    } 
+    .winchester-modal-content{
+        width:500px
+    }
+    .winchester-modal{
+        padding-top:50px
+    }
+}
 @media (min-width:993px){.winchester-modal-content{width:900px}.winchester-hide-large{display:none!important}.winchester-sidebar.winchester-collapse{display:block!important}}
 @media (max-width:992px) and (min-width:601px){.winchester-hide-medium{display:none!important}}
 @media (max-width:992px){.winchester-sidebar.winchester-collapse{display:none}.winchester-main{margin-left:0!important;margin-right:0!important}.winchester-auto{max-width:100%}}
