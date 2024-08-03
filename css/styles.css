@@ -19,6 +19,7 @@ body {
 
 /* Ensure the mobile version remains displayed with 100% width */
 .winchester-mobile {
+    position: fixed;
     display: block;
     width: 100% !important;
 }
