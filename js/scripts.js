@@ -1,8 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
+function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    if (navLinks.style.display === 'block') {
+        navLinks.style.display = 'none';
+    } else {
+        navLinks.style.display = 'block';
+    }
+}
 
-    hamburger.addEventListener('click', function () {
-        navMenu.classList.toggle('show');
-    });
-});
