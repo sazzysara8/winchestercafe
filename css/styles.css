@@ -89,25 +89,70 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media (max-width:1205px){.winchester-auto{max-width:95%}}
 @media (max-width:600px){.winchester-modal-content{margin:0 10px;width:auto!important}.winchester-modal{padding-top:30px}
 .winchester-dropdown-hover.winchester-mobile .winchester-dropdown-content,.winchester-dropdown-click.winchester-mobile .winchester-dropdown-content{position:relative}	
+/* Base styles for the navbar */
+.winchester-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.winchester-bar-item {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.winchester-right {
+    display: flex;
+    gap: 15px;
+}
+
+/* Hide the hamburger menu by default */
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Hide navbar items on small screens */
 .winchester-hide-small {
-    display: block !important;
-    font-size: 0.8em; /* Adjust this value as needed to shrink the navbar text */
-    padding: 5px; /* Adjust padding as needed to fit the design */
+    display: none !important;
 }
 
-/* Ensure the mobile version remains displayed with 100% width */
-.winchester-mobile {
-    display: block;
-    width: 100% !important;
+/* Show navbar items on large screens */
+.winchester-hide-large {
+    display: none !important;
 }
 
-/* Center text alignment for mobile items */
-.winchester-bar-item.winchester-mobile,
-.winchester-dropdown-hover.winchester-mobile,
-.winchester-dropdown-click.winchester-mobile {
-    text-align: center;
+@media (max-width: 768px) {
+    .winchester-hide-small {
+        display: none !important;
+    }
+
+    .winchester-hide-large {
+        display: block !important;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
 }
+
+
+
+
 .winchester-dropdown-hover.winchester-mobile,.winchester-dropdown-hover.winchester-mobile .winchester-btn,.winchester-dropdown-hover.winchester-mobile .winchester-button,.winchester-dropdown-click.winchester-mobile,.winchester-dropdown-click.winchester-mobile .winchester-btn,.winchester-dropdown-click.winchester-mobile .winchester-button{width:100%}}
 @media (max-width:768px){.winchester-modal-content{width:500px}.winchester-modal{padding-top:50px}}
 @media (min-width:993px){.winchester-modal-content{width:900px}.winchester-hide-large{display:none!important}.winchester-sidebar.winchester-collapse{display:block!important}}
