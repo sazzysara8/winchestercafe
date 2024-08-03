@@ -1,3 +1,16 @@
+/* Fixed Navbar */
+.winchester-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Adjustments for the rest of the page to avoid content being hidden behind the navbar */
+body {
+    padding-top: 60px; /* Adjust this value to match the height of your navbar */
+}
+
 .winchester-hide-small {
     display: block !important;
     font-size: 0.8em; /* Adjust this value as needed to shrink the navbar text */
@@ -16,7 +29,6 @@
 .winchester-dropdown-click.winchester-mobile {
     text-align: center;
 }
-
 
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
