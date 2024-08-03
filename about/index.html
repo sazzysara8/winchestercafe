@@ -47,24 +47,19 @@ h1, h2, h3, h4, h5, h6 {
 <body>
 
 <!-- Navbar (sit on top) -->
-    <div class="nav">
-        <div class="winchester-bar winchester-white winchester-padding winchester-card" style="letter-spacing:4px;">
-            <a href="/" class="winchester-bar-item winchester-button">WINCHESTER Cafe & Bar</a>
-            <!-- Right-sided navbar links. Hide them on small screens -->
-            <div class="winchester-right winchester-hide-small" id="navMenu">
-                <a href="/about" class="winchester-bar-item winchester-button">About</a>
-                <a href="/menu" class="winchester-bar-item winchester-button">Menu</a>
-                <a href="/bar" class="winchester-bar-item winchester-button">Night Cafe</a>
-                <a href="/contact" class="winchester-bar-item winchester-button">Reservation</a>
-            </div>
-            <!-- Hamburger menu icon -->
-            <div class="hamburger winchester-hide-large" id="hamburger">
-                &#9776;
-            </div>
-        </div>
-    </div>
-    <script src="/js/scripts.js"></script>
+  
+    <nav>
+        <div class="logo">Logo</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/about">About</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="/bar">Night Cafe</a></li>
+            <li><a href="/contact">Reservation</a></li>
+        </ul>
+    </nav>
 
+    <script src="script.js"></script>
 
 
 <!-- Page content -->
