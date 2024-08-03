@@ -31,10 +31,11 @@ body {
 }
 
 
-iframe {
+.iframe {
     width: 600px;
     height: 450px;
     border: 0;
+}
 
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
@@ -129,7 +130,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     .winchester-auto{
         max-width:95%
     }
-    iframe {
+    .iframe {
         width: 400px;
         height: 300px;
     }
@@ -145,7 +146,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     .winchester-modal{
         padding-top:30px
     }
-    iframe {
+    .iframe {
         width: 100%;
         height: 250px;
     }
