@@ -37,13 +37,13 @@ iframe {
     border: 0;
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 768px and up) 
 @media (max-width: 1024px) {
     iframe {
         width: 500px;
         height: 375px;
     }
-}
+}*/
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 768px) {
