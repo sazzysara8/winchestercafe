@@ -6,9 +6,6 @@
     z-index: 1000;
 }
 
-html {
-    height: 100%;
-}
 
 /* Adjustments for the rest of the page to avoid content being hidden behind the navbar */
 body {
