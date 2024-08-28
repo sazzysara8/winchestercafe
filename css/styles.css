@@ -9,7 +9,6 @@
 
 /* Adjustments for the rest of the page to avoid content being hidden behind the navbar */
 body {
-    min-height: 100vh;
     padding-top: 60px; /* Adjust this value to match the height of your navbar */
 }
 
