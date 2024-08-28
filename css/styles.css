@@ -48,15 +48,15 @@ iframe {
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 768px) {
     iframe {
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: 500px;
     }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
     iframe {
-        width: 100%;
+        width: ５００px;
         height: 100%;
     }
 }
