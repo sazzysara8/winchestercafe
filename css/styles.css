@@ -63,7 +63,7 @@ iframe {
 
 @media (max-width: 480px) {
   .opendates {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .column1, .column2 {
     width: 100%;
