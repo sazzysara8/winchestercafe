@@ -27,6 +27,31 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
+ /* Flex container to hold the columns */
+    .columns-container {
+      display: flex;
+      flex-direction: row; /* Align items horizontally */
+      justify-content: flex-start; /* Align items to the start */
+      align-items: flex-start; /* Align items to the top */
+      gap: 20px; /* Optional: space between columns */
+      flex-wrap: nowrap; /* Prevent columns from wrapping to the next line */
+      padding: 10px; /* Optional: padding around the container */
+    }
+
+/* Responsive adjustments (optional) */
+    @media (max-width: 480px) {
+      .columns-container {
+        flex-direction: row; /* Keep columns side by side */
+        gap: 10px; /* Reduce space between columns */
+      }
+      .column1, .column2 {
+        min-width: 120px; /* Adjust minimum width for smaller screens */
+      }
+
+
+
+
+	
 /* Create two equal columns that floats next to each other */
 .column {
   float: Center;
@@ -127,7 +152,7 @@ padding-left: 0px;
            <h3 style="text-align: left; margin-top: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open Hours</h3>
 	     
      <h6 style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Cafe & Bar -</h6>  
-	<div class="opendates" style="flex-wrap: nowrap;">
+	<div class="columns-container">
        <div class="column1" style="text-align: left;">
         <h6 style="line-height: 2.5;">月曜日（ Mon )<br>
         火曜日（ Tue )<br>
