@@ -188,7 +188,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .winchester-circle{border-radius:50%}
 .winchester-round-small{border-radius:2px}.winchester-round,.winchester-round-medium{border-radius:4px}.winchester-round-large{border-radius:8px}.winchester-round-xlarge{border-radius:16px}.winchester-round-xxlarge{border-radius:32px}
 .winchester-row-padding,.winchester-row-padding>.winchester-half,.winchester-row-padding>.winchester-third,.winchester-row-padding>.winchester-twothird,.winchester-row-padding>.winchester-threequarter,.winchester-row-padding>.winchester-quarter,.winchester-row-padding>.winchester-col{padding:0 8px}
-.winchester-container,.winchester-panel{padding:0.01em 16px}.winchester-panel{margin-top:16px;margin-bottom:16px}
+.winchester-container,.winchester-panel{padding:0.01em 16px; overflow: auto;}.winchester-panel{margin-top:16px;margin-bottom:16px}
 .winchester-code,.winchester-codespan{font-family:Consolas,"courier new";font-size:16px}
 .winchester-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
 .winchester-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
