@@ -14,7 +14,7 @@ body {
 
 .winchester-hide-small {
     display: block !important;
-    font-size: 0.8em; /* Adjust this value as needed to shrink the navbar text */
+    font-size: 16vh; /* Adjust this value as needed to shrink the navbar text */
     padding: 5px; /* Adjust padding as needed to fit the design */
 }
 
