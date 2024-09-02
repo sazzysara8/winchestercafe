@@ -42,6 +42,19 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   clear: both;
 }
+
+/* price in line*/
+.productList {
+    width: 500px;
+}
+.product {
+    border-bottom: 1px dashed #aaa;
+}
+.product .name {
+    font-weight: bold;
+}
+.product .price {
+    float: right;
 </style>
 </head>
 <body>
@@ -79,12 +92,21 @@ h1, h2, h3, h4, h5, h6 {
       </a>
     </div>
 
-    <div id="Drinks" class="winchester-container menu winchester-padding-48 winchester-card">
+    <div id="Drinks" class="productList winchester-container menu winchester-padding-48 winchester-card">
+    <div class="product">
+	<h5>BEER</h5>
+        <span class="name">アサヒスーパードライ</span><span class="price">750</span>
+    </div>
+    <div class="product">
+        <span class="name">ハイネケン</span><span class="price">800</span>
+    </div>
+
+
+
+	    
       <h5">BEER</h5>
-      <p class="winchester-text-grey">アサヒスーパードライ<p>
-	      <p class="winchester-text-grey" style="float: right">¥750</p>
-	<p class="winchester-text-grey">ハイネケン</p>
-	    <p class="winchester-text-grey" style="float: right">¥800</p>    
+      <p class="winchester-text-grey product">アサヒスーパードライ ¥750</p>
+	<p class="winchester-text-grey">ハイネケン ¥800</p>    
 	    
       <h5>SPIRITS</h5>
       <p class="winchester-text-grey">バカルディラム 800<br>マイヤーズラム　¥800<br>ビーフィータージン　¥800</p><br>
