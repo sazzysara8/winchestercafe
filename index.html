@@ -81,25 +81,41 @@ padding-left: 0px;
 }
 
 
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 50px;
+}
+
+.map {
+    margin-right: 50px;
+}
+
+.business-hours {
+    text-align: center;
+}
+
 table {
-    margin: 50px auto;
     border-collapse: collapse;
-    width: 50%;
+    width: 100%;
 
 }
 
 td {
     padding: 10px 20px;
-    border: none;
 }
 
 td:first-child {
-    text-align: right;
+    text-align: left;
 }
 
 td:last-child {
     text-align: right;
 }
+
+
 	
 
 </style>
@@ -164,9 +180,55 @@ td:last-child {
 <hr>
 
 
+<div class="container">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d596.5356574392821!2d135.74480888050215!3d34.71389175243557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x60012331aa296ae5%3A0x2ba1d2b8d848169!2z44Km44Kj44Oz44OB44Kn44K544K_44O844Kr44OV44Kn!3m2!1d34.7137181!2d135.7451273!5e0!3m2!1sen!2sjp!4v1719643105566!5m2!1sen!2sjp" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="business-hours">
+            <table>
+                <tr>
+                    <td>月曜日 (Mon)</td>
+                    <td>定休日</td>
+                </tr>
+                <tr>
+                    <td>火曜日 (Tue)</td>
+                    <td>定休日</td>
+                </tr>
+                <tr>
+                    <td>水曜日 (Wed)</td>
+                    <td>定休日</td>
+                </tr>
+                <tr>
+                    <td>木曜日 (Thu)</td>
+                    <td>11:00 ~ 17:00</td>
+                </tr>
+                <tr>
+                    <td>金曜日 (Fri)</td>
+                    <td>11:00 ~ 17:00 | 19:00 ~ 22:30</td>
+                </tr>
+                <tr>
+                    <td>土曜日 (Sat)</td>
+                    <td>11:00 ~ 17:00 | 19:00 ~ 22:30</td>
+                </tr>
+                <tr>
+                    <td>日曜日 (Sun)</td>
+                    <td>11:00 ~ 17:00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
 
 
 	  
+
+
+	/*  
     <table>
         <tr>
             <td>月曜日 (Mon)</td>
@@ -198,7 +260,7 @@ td:last-child {
         </tr>
     </table>
 
-
+*/
 
 
 	  
