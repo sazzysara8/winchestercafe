@@ -1,3 +1,9 @@
+.text-content {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
 /* Fixed Navbar */
 .winchester-fixed {
     position: fixed;
