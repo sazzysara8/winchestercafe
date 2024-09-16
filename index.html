@@ -88,6 +88,8 @@ padding-left: 0px;
     justify-content: center;
     align-items: flex-start;
     margin: auto;
+    flex-direction: row; /* Default layout for larger screens */
+
 	
 }
 
@@ -97,7 +99,8 @@ padding-left: 0px;
 
 .business-hours {
     text-align: center;
-	display: flex;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -106,6 +109,28 @@ table {
     width: 100%;
 
 }
+	
+/* For small screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks items vertically */
+    }
+
+    .map {
+        margin-right: 0;
+        margin-bottom: 20px; /* Adds some space between map and hours */
+    }
+
+    .business-hours {
+        width: 100%;
+    }
+
+    table {
+        width: 100%; /* Make the table take full width on mobile */
+    }
+}
+
+/* end of small screens */	
 
 td {
     padding: 10px 20px;
