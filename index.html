@@ -40,7 +40,13 @@ h1, h2, h3, h4, h5, h6 {
 
 	
 }
-
+	
+iframe {
+    width: 500px;
+    height: 450px;
+    border: 0;
+}
+	
 .map {
     margin-right: 50px;
 }
@@ -65,8 +71,17 @@ table {
     }
 
     .map {
-        margin-right: 0;
-        margin-bottom: 20px; /* Adds some space between map and hours */
+	margin-right: 0;
+        margin-bottom: 20px; /* Adds space between map and hours on mobile */
+        display: flex;
+        justify-content: center; /* Centers the map container */
+    }
+	
+    iframe {
+	width: 100%;  /* Makes iframe width 100% of its container on mobile */
+        height: auto; /* Adjusts height to keep the aspect ratio */
+        max-width: 300px; /* Maximum width for the iframe on mobile */
+        max-height: 300px; /* Ensures the iframe is a square on mobile */
     }
 
     .business-hours {
