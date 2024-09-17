@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 	
 }
 	
-iframe {
+.map-iframe {
     width: 500px;
     height: 450px;
     border: 0;
@@ -63,6 +63,8 @@ table {
     width: 100%;
 
 }
+
+	
 	
 /* For small screens */
 @media (max-width: 768px) {
@@ -80,14 +82,18 @@ table {
         width: 100%;             /* Make sure the container spans the screen width */
     }
 	
-    iframe {
+    .map-iframe {
         width: 100%;        /* Full width within container */
         max-width: 300px;    /* Limits the iframe to a maximum width of 300px */
         height: 300px;       /* Ensures height is 300px to form a square */
         border: 0;
 
     }
-
+	
+    .reservation-iframe{
+	    width: 100%; 
+    }
+	
     .business-hours {
         width: 100%;
     }
@@ -174,7 +180,7 @@ td:last-child {
 
 <div class="container">
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d596.5356574392821!2d135.74480888050215!3d34.71389175243557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x60012331aa296ae5%3A0x2ba1d2b8d848169!2z44Km44Kj44Oz44OB44Kn44K544K_44O844Kr44OV44Kn!3m2!1d34.7137181!2d135.7451273!5e0!3m2!1sen!2sjp!4v1719643105566!5m2!1sen!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d596.5356574392821!2d135.74480888050215!3d34.71389175243557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x60012331aa296ae5%3A0x2ba1d2b8d848169!2z44Km44Kj44Oz44OB44Kn44K544K_44O844Kr44OV44Kn!3m2!1d34.7137181!2d135.7451273!5e0!3m2!1sen!2sjp!4v1719643105566!5m2!1sen!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="business-hours">
             <table>
@@ -224,7 +230,7 @@ td:last-child {
   <div class="winchester-container winchester-padding-64" id="contact">
     <h1>Reservation</h1><br>
     <p>ご予約はこちらから</p>
-	  	<iframe type="text/html" frameborder="0" width="100%" height="100%" src="//airrsv.net/winchester-cafe/calendar/embed/" ></iframe>
+	  	<iframe class="reservation-iframe" type="text/html" frameborder="0" width="100%" height="100%" src="//airrsv.net/winchester-cafe/calendar/embed/" ></iframe>
   </div>
   
 <!-- End page content -->
