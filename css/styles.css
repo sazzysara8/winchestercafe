@@ -16,9 +16,6 @@
 /* Adjustments for the rest of the page to avoid content being hidden behind the navbar */
 body {
     padding-top: 60px; /* Adjust this value to match the height of your navbar */
-    font-size: 4vw;
-    width: 90%;
-    max-width: 800px;
 }
 
 .winchester-hide-small {
@@ -52,6 +49,9 @@ iframe {
 
 /* Extra small devices (portrait phones, less than 576px)  */
 @media (max-width: 768px) {
+    body {
+        font-size: 4vw;
+    }
     iframe {
         width: 10%;
         height: 10%;
