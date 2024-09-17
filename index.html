@@ -71,17 +71,17 @@ table {
     }
 
     .map {
-	margin-right: 0;
-        margin-bottom: 20px; /* Adds space between map and hours on mobile */
+        margin-right: 0;
+        margin-bottom: 20px;
         display: flex;
+        justify-content: center; /* Centers the map */
     }
 	
     iframe {
-	width: 100%;  /* Makes iframe width 100% of its container on mobile */
-        height: auto; /* Adjusts height to keep the aspect ratio */
-        max-width: 300px; /* Maximum width for the iframe on mobile */
-        max-height: 300px; /* Ensures the iframe is a square on mobile */
-        justify-content: center; /* Centers the map container */
+        width: 100%;        /* Full width within container */
+        max-width: 300px;    /* Limits the iframe to a maximum width of 300px */
+        height: 300px;       /* Ensures height is 300px to form a square */
+        border: 0;
 
     }
 
