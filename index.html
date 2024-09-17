@@ -74,7 +74,10 @@ table {
         margin-right: 0;
         margin-bottom: 20px;
         display: flex;
-        justify-content: center; /* Centers the map */
+        justify-content: center; /* Centers the map horizontally */
+        align-items: center;     /* Centers the map vertically */
+        flex-direction: column;  /* Ensures the layout is vertical */
+        width: 100%;             /* Make sure the container spans the screen width */
     }
 	
     iframe {
