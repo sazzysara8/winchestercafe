@@ -47,8 +47,8 @@ iframe {
 
 
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 576px) {
+/* Extra small devices (portrait phones, less than 576px) 
+@media (max-width: 768px) {
     iframe {
         width: 50%;
         height: 50%;
@@ -56,7 +56,7 @@ iframe {
 
     }
 }
-
+*/
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
