@@ -1,9 +1,3 @@
-.text-content {
-    width: 90%;
-    max-width: 800px;
-    text-align: center;
-}
-
 
 /* Fixed Navbar */
 .winchester-fixed {
@@ -18,6 +12,8 @@
 body {
     padding-top: 60px; /* Adjust this value to match the height of your navbar */
     font-size: 4vw;
+    width: 90%;
+    max-width: 800px;
 }
 
 .winchester-hide-small {
