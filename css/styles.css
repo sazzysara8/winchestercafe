@@ -38,25 +38,13 @@ body {
 }
 
 
-iframe {
-    width: 500px;
-    height: 450px;
-    border: 0;
-}
-
-
 
 
 /* Extra small devices (portrait phones, less than 576px)  */
 @media (max-width: 768px) {
     body {
-        font-size: 4vw;
-    }
-    iframe {
-        width: 10%;
-        height: 10%;
-        display: flex;
-
+        font-size: 5vw;
+        margin: 20px;
     }
 }
 
