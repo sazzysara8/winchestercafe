@@ -94,7 +94,7 @@ body {
 @media (max-width: 768px) {
   .social-icons {
     flex-direction: column; /* Stack links vertically */
-    gap: 5px; /* Reduce gap for smaller screens */
+    gap: 0px; /* Reduce gap for smaller screens */
   }
 
   .social-icons a {
