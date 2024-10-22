@@ -92,13 +92,15 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .social-icon {
-    width: 35px;
-    height: 25px;
-    margin: 0 10px;
+  .social-icons {
+    flex-direction: column; /* Stack links vertically */
+    gap: 20px; /* Reduce gap for smaller screens */
+  }
+
+  .social-icons a {
+    font-size: 16px; /* Slightly smaller text for mobile screens */
   }
 }
-
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
