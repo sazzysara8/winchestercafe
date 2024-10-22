@@ -95,6 +95,8 @@ body {
   .social-icons {
     flex-direction: column; /* Stack links vertically */
     gap: 0px; /* Reduce gap for smaller screens */
+    height: 20px;
+    margin: 0 5px;
   }
 
   .social-icons a {
