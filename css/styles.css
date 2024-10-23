@@ -100,6 +100,8 @@ body {
 
   .social-icons a {
     font-size: 16px; /* Slightly smaller text for mobile screens */
+    margin: -5px 0; /* Negative margin to reduce spacing further */
+
   }
 }
 
