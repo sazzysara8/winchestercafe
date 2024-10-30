@@ -94,12 +94,11 @@ body {
 @media (max-width: 768px) {
   .social-icons {
     flex-direction: column; /* Stack links vertically */
-    height: 60px;
-    margin: 0 5px;
+    height: 40px;
   }
 
   .social-icons a {
-    font-size: 16px; /* Slightly smaller text for mobile screens */
+    font-size: 12px; /* Slightly smaller text for mobile screens */
     margin: -10px 0; /* Negative margin to reduce spacing further */
 
   }
