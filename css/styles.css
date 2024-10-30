@@ -94,15 +94,18 @@ body {
 @media (max-width: 768px) {
   .social-icons {
     flex-direction: column; /* Stack links vertically */
-    height: 40px;
+    align-items: center; /* Center align links if needed */
+    gap: 4px; /* Adjust spacing between links */
   }
 
   .social-icons a {
     font-size: 12px; /* Slightly smaller text for mobile screens */
-    margin: -10px 0; /* Negative margin to reduce spacing further */
-
+    margin: 0; /* Remove external margin */
+    padding: 6px 0; /* Add minimal padding to control spacing */
+    line-height: 1.2; /* Reduce line-height for tighter spacing */
   }
 }
+  
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
