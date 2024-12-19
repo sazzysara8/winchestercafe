@@ -21,134 +21,121 @@ body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
 }
-
-/* {
-  box-sizing: border-box;
-  
-} */
-
-
-
-
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: auto;
-    flex-direction: row; /* Default layout for larger screens */
-
 	
+a {
+    text-decoration: none;
+    color: #333;
 }
-	
-.map-iframe {
-    width: 500px;
-    height: 450px;
-    border: 0;
-}
-	
-.map {
-    margin-right: 50px;
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 
-.reservation-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* Horizontally centers the content */
-    justify-content: center;
-    text-align: center;   /* Centers the text */
-    height: 100vh;        /* Optional: Makes the container take up the full viewport height */
+.news {
+  padding: 50px 0;
+  background: #E2CDBA;
 }
 
-.reservation-iframe{
-    width: 500px;
-    height: 450px;
-    justify-content: center;
-    margin: auto;
 
+.inner {
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 65px 0 100px;
 }
 
-.business-hours {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
 
+.sub_ttl {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
+/* ここからがニュース記事のCSS */
 
+.news_list {
+  margin: 0 5%;
 }
 
-	
-	
-/* For small screens */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stacks items vertically */
-    }
+.news_list_item {
+  padding: 25px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
 
-    .map {
-        margin-right: 0;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center; /* Centers the map horizontally */
-        align-items: center;     /* Centers the map vertically */
-        flex-direction: column;  /* Ensures the layout is vertical */
-        width: 100%;             /* Make sure the container spans the screen width */
-    }
-	
-    .map-iframe {
-        width: 100%;        /* Full width within container */
-        max-width: 300px;    /* Limits the iframe to a maximum width of 300px */
-        height: 300px;       /* Ensures height is 300px to form a square */
-        border: 0;
+.news_list_item:first-child {
+  border-top: 1px solid #E6E6E6;
+}
+.news_list_item a {
+ position: relative;
+ display: flex;
+ padding-right: 30px;
+}
 
-    }
+.news_list_date {
+  font-size: 15px;
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+}
 
-		
-    .reservation-iframe{
-	width: 100%;          /* Full width, adjusts to container */
-   	max-width: 500px;     /* Max width to keep it readable */
-    	height: 450px;        /* Fixed height */
-    	margin: 0 auto;   
-    }
-	
-    .business-hours {
-        width: 100%;
-    }
+.news_item {
+  background: #FFF7EA;
+  border-radius: 14px;
+  width: 6em;
+  /* 親要素の文字サイズを基準 */
+  text-align: center;
+  margin-left: 20px;
+}
 
-    table {
-        width: 100%; /* Make the table take full width on mobile */
+.arrow {
+  width: 25px;
+  height: 1px;
+  background: #707070;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.arrow::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 1px;
+  background: #707070;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 0px;
+  bottom: 2px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .news_list_item a {
+        display: block;
     }
 }
 
-/* end of small screens */	
+@media screen and (max-width: 769px) {
+    .news_list_item a  {
+        font-size: 14px;
+    }
 
-td {
-    padding: 10px 20px;
+
 }
-
-td:first-child {
-    text-align: left;
+@media screen and (max-width: 480px) {
+    .arrow {
+        display: none;
+    }
+    .news_list_item a {
+        padding-right: 0;
+    }
 }
-
-td:last-child {
-    text-align: right;
-}
-
-
-	
-
 </style>
 </head>
 <body>
-
-
-	
-<!-- Navbar (sit on top) -->
 <div class="nav winchester-fixed">
   <div class="winchester-bar winchester-white winchester-padding winchester-card" style="letter-spacing: 4px;">
     <a href="/" class="winchester-bar-item winchester-button">WINCHESTER Cafe & Bar</a>
@@ -161,14 +148,29 @@ td:last-child {
   </div>
 </div>
 
-	
-<!-- Slideshow -->
-<h1>LINE公式アカウント始めました！</h1>
-	
-<!-- Page content -->
 
-  
-<!-- End page content -->
+<section class="news">
+        <div class="inner">
+          <h2 class="sub_ttl">NEWS</h2>
+    
+    <!-- ここからニュース記事 -->
+    
+ <h1>LINE公式アカウント始めました！</h1>
+    
+    
+        </div>
+</section>
+
+	<footer class="footer">
+  <div class="social-icons">
+    <a href="https://www.instagram.com/winchester.cafe/" target="_blank"> Instagram </a>
+    <a href="https://lin.ee/MTbXuXN" target="_blank"> 公式LINE </a>
+    <a href="https://mars-speed.co.jp/" target="_blank"> 本社ウェブサイト </a>  
+    <a href="https://www.winchester.jp/" target="_blank"> アンティーク ECサイト </a>  
+
+  </div>
+		
+</footer>	
 
 	
 </body>
